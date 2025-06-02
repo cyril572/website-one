@@ -1,0 +1,413 @@
+*{
+  margin: 0%;
+  margin: 0%;
+}
+body{
+  background-color:white;
+}
+
+ .log{
+    font-size: x-large;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    
+ }
+ header{
+   display: flex;
+   justify-content: space-between;
+   background-color: black;
+ }
+ nav .logo a{
+    text-decoration: none;
+     margin:10px;
+     color: aliceblue;
+ }
+ .logo{
+   
+   font-size: larger;
+   
+ }
+ #home{
+   margin-left: 30px;
+ }
+
+    
+ .hero{
+   padding: 20px;
+   background: linear-gradient( purple);
+   height: 400px;
+   box-shadow: 0px 0px 9px;
+   justify-content: center;
+   display: flex;
+   gap: 50px;
+   align-items: center;
+ }
+
+  .text{
+   top: 70px;
+   font-size: xx-large;
+   color: aliceblue;
+
+ }
+ .text h6{
+   color:red;
+   max-width: 150px;
+   animation-name: slide;
+   animation-duration: 1s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+ }
+  .text p{
+    font-family:fantasy;
+    animation-name: slide2;
+   animation-duration: 1s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+ }
+
+    
+ 
+ .text button{
+   border-radius: 10px;
+   font-size: x-large;
+   background-color:black;
+   color: white;
+   margin-top: 20px;
+ }
+
+
+
+ @media (max-width: 425px){
+  .hero{
+    flex-direction: column;
+  }
+
+ }
+ @keyframes slide{
+  from{
+    transform: translate(40px);
+  }
+  to{
+    transform: translate(0px);
+  }
+ }
+ @keyframes slide2{
+  from{
+    transform: translate(80px);
+  }
+  to{
+    transform: translate(0px);
+  }
+ }
+  .food img{
+     max-width: 400px;
+     width: 100%;
+     height: 100%;
+     border-radius: 30px;
+     /* position:absolute; */
+     /* left: 30rem; */
+     /* top: 4rem; */
+     animation-name: food;
+     animation-duration: 1s;
+     animation-timing-function: ease-in;
+     
+  }
+  @keyframes food{
+    from{
+      transform: translateY(400px);
+    }
+    to{
+      transform: translateY(0px);
+    }
+  }
+
+   .section2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    
+  }
+  .class1{
+    box-shadow: 0px 0px 9px purple;
+    height: 15rem;
+    margin-top: 30px;
+    margin-left: 12px;
+
+  }
+  .class1:hover{
+    transform: scale(0.9);
+    transition: 1s;
+  }
+  .class1 h3{
+    text-align: center;
+    margin-top: 20px;
+  }
+  .class1 p{
+    max-width: 400px;
+    padding-left: 9px;
+    margin-top: 20px;
+  }
+ .class2{
+  box-shadow: 0px 0px 9px purple;
+  height: 15rem;
+    margin-top: 30px;
+    margin-left: 30px;
+ }
+ .class2:hover{
+  transform: scale(0.9);
+  transition: 1s;
+}
+ .class2 h3{
+  text-align: center;
+  margin-top: 20px;
+}
+.class2 p{
+  max-width: 400px;
+  padding-left: 9px;
+  margin-top: 20px;
+  max-height: 100%;
+}
+ .class3{
+  box-shadow: 0px 0px 9px purple;
+  height: 15rem;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 12px;
+ }
+ .class3:hover{
+  transform: scale(0.9);
+  transition: 1s;
+}
+ .topic{
+   text-align: center;
+   margin-top: 70px;
+ }
+ .class3 h3{
+  text-align: center;
+  margin-top: 20px;
+}
+.class3 p{
+  max-width: 400px;
+  padding-left: 9px;
+  margin-top: 20px;
+  max-height: 100%;
+}
+.design{
+  text-align: center;
+  margin-top: 50px;
+}
+   
+
+
+.mk{
+  box-shadow: 0px 0px 9px;
+  background: linear-gradient(purple,red);
+  padding: 12px;
+  margin: 9px;
+  border-radius: 6px;
+
+}
+
+
+.image3{
+ 
+ margin-top: 19px;
+ 
+ box-shadow: 0px 0px 9px purple;
+ width: 230px;
+ margin-left: 5px;
+ border-radius: 9px;
+
+  
+ 
+}
+.image2{
+  border-radius: 12px;
+  box-shadow: 0px 0px 9px purple;
+  margin-bottom: 20px;
+  border-radius: 9px;
+  
+  
+
+  
+  
+ }
+
+.foods{
+   margin-top: 0px;
+   box-shadow: 0px 0px 19px purple;
+   margin: 20px;
+
+}
+.foods:hover{
+  transform:scale(0.9);
+  transition: 1s;
+}
+.mk  p{
+  color: white;
+}
+@keyframes order{
+  from{
+    transform: rotate(360deg);
+  }
+  50%{
+    background-color: yellow;
+  }
+
+ to{
+    transform: rotate(0deg);
+  }
+
+}
+.order{
+  background:linear-gradient(red,purple);
+  height: 22rem;
+  width: 20%;
+  margin-left: 30rem;
+  margin-top: 30px;
+ box-shadow: 0px 0px 13px purple;
+ border: 1px solid purple;
+ border-radius: 100px;
+ animation-name: order;
+ animation-duration: 6s;
+ animation-timing-function: ease-in-out;
+ animation-iteration-count: infinite;
+}
+.order2{
+  background-color: aliceblue;
+
+  height: 20rem ;
+  margin-top: 1rem;
+  margin:5%;
+  
+  
+
+}
+
+.container{
+  box-shadow: 0px 0px 9px purple;
+  letter-spacing: 2px;
+  line-height: 27px;
+  width: 60%;
+  margin: 19px;
+  max-width: 100%;
+}
+.container h1{
+  font-size: x-large;
+  text-align: center;
+  font-family:sans-serif;
+  max-width: 100%;
+}
+.container h4{
+  text-align: center;
+  max-width: 100%;
+}
+.container ul{
+  list-style-type:lower-roman;
+  max-width: 100%;
+}
+.container input{
+  margin: 9px;
+  font-size:x-small;
+  box-shadow: 0px 0px 9px;
+  font-family: cursive;
+  max-width: 100%;
+  width: 70px;
+}
+.container a{
+  text-decoration: none;
+  color:red;
+}
+.last{
+  max-width: 100%;
+  padding: 19px;
+}
+.order2 h1{
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container li{
+  max-width:100%;
+}
+.end{
+  font-size: larger;
+  text-align: center;
+  box-shadow: 0px 0px 10px purple;
+  font-size: x-large;
+  font-family: fantasy;
+  background-color: black;
+  color: aliceblue;
+  margin-top: 20px;
+}
+
+ footer{
+  border: 4px solid black;
+  color: white;
+  background-color: black;
+  text-align: center;
+    margin-top: 19px;
+  padding: 12px;
+ }
+ footer .h4{
+    font-family: monospace;
+
+ }
+ 
+@media (max-width:900px) {
+  a{
+    font-size: x-small;
+  }
+  #contact{
+     margin-left: 6px;
+  }
+    .order{
+      margin-left:69px;
+    }
+  
+    .text {
+      font-size: larger;
+      /* margin-top: 100px; */
+    }
+ 
+  .image3{
+   margin-left: 0px;
+   margin:9px;
+   max-width: 100%;
+  }
+  .image2{
+    margin-left: 0px;
+    margin:9px;
+    max-width: 100%;
+   }
+  .image1{
+    max-width: 100%;
+  }
+  .class3 p{
+   max-width: 100%;
+   font-size: x-small;
+  }
+  .class1 p{
+   max-width: 100%;
+   font-size:  x-small;
+   max-height: 100%;
+  }
+  .class2 p{
+   max-width: 100%;
+   font-size: x-small;
+   max-height: 100%;
+  }
+  .image2{
+   margin-left: 0px;
+   margin :9px;
+   max-width:100% ;
+  }
+  .image3{
+   margin-left: 0px;
+   margin:9px
+  }
+}
+   
+
+
+
